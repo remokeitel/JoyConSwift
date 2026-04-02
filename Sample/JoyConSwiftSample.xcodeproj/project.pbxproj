@@ -3,18 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AABB00000000000000000003 /* JoyConSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AABB00000000000000000002 /* JoyConSwift */; };
 		DD0ADFC922D1D11C00B68F05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0ADFC822D1D11C00B68F05 /* AppDelegate.swift */; };
 		DD0ADFCB22D1D11C00B68F05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0ADFCA22D1D11C00B68F05 /* ViewController.swift */; };
 		DD0ADFCD22D1D11E00B68F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD0ADFCC22D1D11E00B68F05 /* Assets.xcassets */; };
 		DD0ADFD022D1D11E00B68F05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0ADFCE22D1D11E00B68F05 /* Main.storyboard */; };
-		AABB00000000000000000003 /* JoyConSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AABB00000000000000000002 /* JoyConSwift */; };
 		DD0ADFEF22D1D77300B68F05 /* ViewController+NSTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0ADFEE22D1D77300B68F05 /* ViewController+NSTableViewDelegate.swift */; };
 /* End PBXBuildFile section */
-
 
 /* Begin PBXFileReference section */
 		DD0ADFC522D1D11C00B68F05 /* JoyConSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoyConSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,7 +23,6 @@
 		DD0ADFCF22D1D11E00B68F05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD0ADFD122D1D11E00B68F05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD0ADFD222D1D11E00B68F05 /* JoyConSwiftSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JoyConSwiftSample.entitlements; sourceTree = "<group>"; };
-
 		DD0ADFEE22D1D77300B68F05 /* ViewController+NSTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+NSTableViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,10 +120,10 @@
 				Base,
 			);
 			mainGroup = DD0ADFBC22D1D11C00B68F05;
-			productRefGroup = DD0ADFC622D1D11C00B68F05 /* Products */;
 			packageReferences = (
 				AABB00000000000000000001 /* XCLocalSwiftPackageReference ".." */,
 			);
+			productRefGroup = DD0ADFC622D1D11C00B68F05 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -300,7 +298,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.0spec.JoyConSwiftSample;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.kotliamba.JoyConSwiftSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -320,7 +318,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.0spec.JoyConSwiftSample;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.kotliamba.JoyConSwiftSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -352,7 +350,7 @@
 /* Begin XCLocalSwiftPackageReference section */
 		AABB00000000000000000001 /* XCLocalSwiftPackageReference ".." */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = "..";
+			relativePath = ..;
 		};
 /* End XCLocalSwiftPackageReference section */
 
