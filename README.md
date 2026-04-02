@@ -3,13 +3,15 @@ IOKit wrapper for Nintendo Joy-Con and ProController (macOS, Swift)
 
 ## Installation
 
-### Using [CocoaPods](http://cocoapods.org/)
+### Using Swift Package Manager
 
-Add the following to your [Podfile](http://guides.cocoapods.org/using/the-podfile.html):
+Add the following to your `Package.swift` dependencies:
 
-```rb
-pod 'JoyConSwift'
+```swift
+.package(url: "https://github.com/Kotliamba/JoyConSwift.git", from: "0.2.1")
 ```
+
+Or add via Xcode: **File > Add Package Dependencies…** and enter the repository URL.
 
 ## Set USB Capability
 

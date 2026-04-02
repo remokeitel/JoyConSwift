@@ -15,6 +15,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     }
 
+    func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
+        return true
+    }
+
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }

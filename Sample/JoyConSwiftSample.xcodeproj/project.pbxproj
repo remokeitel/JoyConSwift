@@ -11,24 +11,10 @@
 		DD0ADFCB22D1D11C00B68F05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0ADFCA22D1D11C00B68F05 /* ViewController.swift */; };
 		DD0ADFCD22D1D11E00B68F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD0ADFCC22D1D11E00B68F05 /* Assets.xcassets */; };
 		DD0ADFD022D1D11E00B68F05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0ADFCE22D1D11E00B68F05 /* Main.storyboard */; };
-		DD0ADFEB22D1D1BC00B68F05 /* JoyConSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0ADFEA22D1D1BC00B68F05 /* JoyConSwift.framework */; };
-		DD0ADFEC22D1D1BC00B68F05 /* JoyConSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD0ADFEA22D1D1BC00B68F05 /* JoyConSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AABB00000000000000000003 /* JoyConSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AABB00000000000000000002 /* JoyConSwift */; };
 		DD0ADFEF22D1D77300B68F05 /* ViewController+NSTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0ADFEE22D1D77300B68F05 /* ViewController+NSTableViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		DD0ADFED22D1D1BC00B68F05 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				DD0ADFEC22D1D1BC00B68F05 /* JoyConSwift.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DD0ADFC522D1D11C00B68F05 /* JoyConSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoyConSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,7 +24,7 @@
 		DD0ADFCF22D1D11E00B68F05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD0ADFD122D1D11E00B68F05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD0ADFD222D1D11E00B68F05 /* JoyConSwiftSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JoyConSwiftSample.entitlements; sourceTree = "<group>"; };
-		DD0ADFEA22D1D1BC00B68F05 /* JoyConSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JoyConSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+
 		DD0ADFEE22D1D77300B68F05 /* ViewController+NSTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+NSTableViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD0ADFEB22D1D1BC00B68F05 /* JoyConSwift.framework in Frameworks */,
+				AABB00000000000000000003 /* JoyConSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +43,6 @@
 		DD0ADFBC22D1D11C00B68F05 = {
 			isa = PBXGroup;
 			children = (
-				DD0ADFEA22D1D1BC00B68F05 /* JoyConSwift.framework */,
 				DD0ADFC722D1D11C00B68F05 /* JoyConSwiftSample */,
 				DD0ADFC622D1D11C00B68F05 /* Products */,
 			);
@@ -95,13 +80,15 @@
 				DD0ADFC122D1D11C00B68F05 /* Sources */,
 				DD0ADFC222D1D11C00B68F05 /* Frameworks */,
 				DD0ADFC322D1D11C00B68F05 /* Resources */,
-				DD0ADFED22D1D1BC00B68F05 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = JoyConSwiftSample;
+			packageProductDependencies = (
+				AABB00000000000000000002 /* JoyConSwift */,
+			);
 			productName = JoyConSwiftSample;
 			productReference = DD0ADFC522D1D11C00B68F05 /* JoyConSwiftSample.app */;
 			productType = "com.apple.product-type.application";
@@ -136,6 +123,9 @@
 			);
 			mainGroup = DD0ADFBC22D1D11C00B68F05;
 			productRefGroup = DD0ADFC622D1D11C00B68F05 /* Products */;
+			packageReferences = (
+				AABB00000000000000000001 /* XCLocalSwiftPackageReference ".." */,
+			);
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -303,12 +293,13 @@
 				CODE_SIGN_ENTITLEMENTS = JoyConSwiftSample/JoyConSwiftSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = EF37D6UQZ9;
+				DEVELOPMENT_TEAM = U2FVAML6Y7;
 				INFOPLIST_FILE = JoyConSwiftSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.0spec.JoyConSwiftSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -322,12 +313,13 @@
 				CODE_SIGN_ENTITLEMENTS = JoyConSwiftSample/JoyConSwiftSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = EF37D6UQZ9;
+				DEVELOPMENT_TEAM = U2FVAML6Y7;
 				INFOPLIST_FILE = JoyConSwiftSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.0spec.JoyConSwiftSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -356,6 +348,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		AABB00000000000000000001 /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "..";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AABB00000000000000000002 /* JoyConSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AABB00000000000000000001 /* XCLocalSwiftPackageReference ".." */;
+			productName = JoyConSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DD0ADFBD22D1D11C00B68F05 /* Project object */;
 }
