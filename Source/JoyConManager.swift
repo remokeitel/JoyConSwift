@@ -197,7 +197,7 @@ public class JoyConManager {
         
         IOHIDManagerSetDeviceMatchingMultiple(self.manager, criteria as CFArray)
         IOHIDManagerScheduleWithRunLoop(self.manager, runLoop.getCFRunLoop(), CFRunLoopMode.defaultMode.rawValue)
-        let ret = IOHIDManagerOpen(self.manager, IOOptionBits(kIOHIDOptionsTypeSeizeDevice))
+        let ret = IOHIDManagerOpen(self.manager, IOOptionBits(kIOHIDOptionsTypeNone))
         if (ret != kIOReturnSuccess) {
             print("Failed to open HID manager")
             return ret
@@ -208,7 +208,7 @@ public class JoyConManager {
         self.runLoop = runLoop
         self.runLoop?.run()
  
-        IOHIDManagerClose(self.manager, IOOptionBits(kIOHIDOptionsTypeSeizeDevice))
+        IOHIDManagerClose(self.manager, IOOptionBits(kIOHIDOptionsTypeNone))
         IOHIDManagerUnscheduleFromRunLoop(self.manager, runLoop.getCFRunLoop(), CFRunLoopMode.defaultMode.rawValue)
 
         return kIOReturnSuccess
