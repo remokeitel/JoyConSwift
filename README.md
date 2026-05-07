@@ -8,7 +8,7 @@ IOKit wrapper for Nintendo Joy-Con and ProController (macOS, Swift)
 Add the following to your `Package.swift` dependencies:
 
 ```swift
-.package(url: "https://github.com/Kotliamba/JoyConSwift.git", from: "0.2.1")
+.package(url: "https://github.com/remokeitel/JoyConSwift.git", from: "1.0.0")
 ```
 
 Or add via Xcode: **File > Add Package Dependencies…** and enter the repository URL.
