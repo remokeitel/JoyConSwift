@@ -1,6 +1,9 @@
 # JoyConSwift
 IOKit wrapper for Nintendo Joy-Con and ProController (macOS, Swift)
 
+[!NOTE]
+To have the device seized by JoyConSwift, use the `seize-device` branch! This corresponds to the original behavior.
+
 ## Installation
 
 ### Using Swift Package Manager
@@ -8,7 +11,7 @@ IOKit wrapper for Nintendo Joy-Con and ProController (macOS, Swift)
 Add the following to your `Package.swift` dependencies:
 
 ```swift
-.package(url: "https://github.com/remokeitel/JoyConSwift.git", from: "1.0.0")
+.package(url: "https://github.com/remokeitel/JoyConSwift.git", from: "1.1.0")
 ```
 
 Or add via Xcode: **File > Add Package Dependencies…** and enter the repository URL.
