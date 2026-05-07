@@ -291,14 +291,14 @@
 				CODE_SIGN_ENTITLEMENTS = JoyConSwiftSample/JoyConSwiftSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = U2FVAML6Y7;
+				DEVELOPMENT_TEAM = V7FCSDM8KV;
 				INFOPLIST_FILE = JoyConSwiftSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.kotliamba.JoyConSwiftSample;
+				PRODUCT_BUNDLE_IDENTIFIER = net.remokeitel.JoyConSwiftSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -311,14 +311,14 @@
 				CODE_SIGN_ENTITLEMENTS = JoyConSwiftSample/JoyConSwiftSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = U2FVAML6Y7;
+				DEVELOPMENT_TEAM = V7FCSDM8KV;
 				INFOPLIST_FILE = JoyConSwiftSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.kotliamba.JoyConSwiftSample;
+				PRODUCT_BUNDLE_IDENTIFIER = net.remokeitel.JoyConSwiftSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
