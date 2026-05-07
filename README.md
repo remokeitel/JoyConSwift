@@ -1,8 +1,8 @@
 # JoyConSwift
 IOKit wrapper for Nintendo Joy-Con and ProController (macOS, Swift)
 
-[!NOTE]
-To have the device seized by JoyConSwift, use the `seize-device` branch! This corresponds to the original behavior.
+> [!NOTE]
+> To have the device seized by JoyConSwift, use the `seize-device` branch! This corresponds to the original behavior.
 
 ## Installation
 
